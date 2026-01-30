@@ -1,0 +1,56 @@
+/* base theme colors */
+[data-theme="light"] {
+  --primary: lch(80.6% 0.01 296.81);
+  --text: lch(0% 0 0);
+  --delta-hover: 0.95;
+  --delta-over: 1.2;
+}
+
+[data-theme="dark"] {
+  --primary: hsl(0, 0%, 16%);
+  /* --accent: rgba(); */
+  --text: rgb(255, 255, 255);
+  --delta-hover: 1.5;
+  --delta-over: 0.9;
+}
+
+[data-theme="sepia"] {
+  --primary: hsl(38, 61%, 71%);
+  --text: rgb(0, 0, 0);
+  --delta-hover: 0.9;
+  --delta-over: 1.1;
+}
+
+[data-theme="q"] {
+  --primary: rgb(64, 155, 87);
+  --text: rgb(247, 179, 225);
+  --delta-hover: 0.9;
+  --delta-over: 0.75;
+}
+
+:root {
+  font-family: system-ui, sans-serif;
+  margin:0;
+  padding:0;
+  /* overflow: hidden; */
+  height: 100%;
+
+  --nav-bg: oklch(from var(--primary) calc(l* var(--delta-over)) c h);
+
+  /* --nav-radius: 6px;  */
+  --base-trans-time: 250ms;
+
+  transition: all 0.25s ease;
+  scrollbar-color: var(--primary) var(--nav-bg);
+  /* scrollbar-gutter: stable; */
+
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: var(--primary);
+  color: var(--text);
+  /* overflow:hidden; */
+}

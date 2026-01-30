@@ -1,0 +1,5 @@
+.card{
+  height: 200vh;
+  transition: all var(--base-trans-time) 250ms ease;
+}
+
