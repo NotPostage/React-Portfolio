@@ -43,9 +43,9 @@ function ThemeMenu({ setTheme }) {
           <li role="menuitem" onClick={() => setTheme('sepia')}>
             Sepia
           </li>
-          <li role="menuitem" onClick={() => setTheme('q')}>
+          {/* <li role="menuitem" onClick={() => setTheme('q')}>
             Graphic Design Is My Passion
-          </li>
+          </li> */}
         </ul>
       )}
     </div>

@@ -18,11 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-
-        {/* catch-all */}
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
-      {/* <Card /> */}
     </>
   )
 } 

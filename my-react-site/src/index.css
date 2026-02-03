@@ -1,9 +1,9 @@
 /* base theme colors */
 [data-theme="light"] {
-  --primary: lch(80.6% 0.01 296.81);
+  --primary: lch(90.6% 0.01 296.81);
   --text: lch(0% 0 0);
   --delta-hover: 0.95;
-  --delta-over: 1.2;
+  --delta-over: 1.1;
 }
 
 [data-theme="dark"] {
@@ -43,6 +43,7 @@
   transition: all 0.25s ease;
   scrollbar-color: var(--primary) var(--nav-bg);
   /* scrollbar-gutter: stable; */
+  font-size: 20px;
 
 }
 
