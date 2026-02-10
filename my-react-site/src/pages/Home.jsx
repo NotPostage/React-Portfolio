@@ -26,7 +26,6 @@ function HomePage() {
             </a>
         </div>
     </header>
-
     </main>
   );
 }

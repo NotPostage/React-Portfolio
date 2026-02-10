@@ -100,9 +100,7 @@
   margin-bottom: 0.4rem;
 }
 
-/* =========================
-   Links
-   ========================= */
+/* Links */
 
 .project-links {
   margin-top: auto;
@@ -116,7 +114,6 @@
 
   color: var(--text);
   text-decoration: none;
-  
 }
 
 .project-links a:hover {
