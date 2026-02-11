@@ -1,8 +1,8 @@
 import './Card.css' 
 
-function Card({ title, summary, tech, highlights, github, replit, live }) {
+function Card({ title, summary, tech, highlights, github, replit, live, featured, onClick}) {
   return (
-    <div className="project-card">
+    <div className={`project-card ${featured ? "featured" : ""}`} onClick={onClick}>
       <header>
         <h2>{title}</h2>
         <p className="project-summary">{summary}</p>

@@ -11,12 +11,13 @@ export const projects = [
       "Deployed using Cloudflare Pages for fast global hosting"
     ],
     github: "https://github.com/NotPostage/React-Portfolio",
+    featured: true,
   },
   {
     title: "BattleSnake (Hackathon)",
     summary:
       "Python-based algoryhtmic-intelegenc developed during a competitive hackathon using API-driven gameplay.",
-    tech: ["Python", "REST APIs", "JSON"],
+    tech: ["Python", "APIs", "JSON"],
     highlights: [
       "Communicated with a live game server using REST-style APIs",
       "Parsed JSON game state to make real-time decisions",
@@ -36,7 +37,8 @@ export const projects = [
       "Used Git branching to safely experiment with algorithms",
       "Focused on performance and user experience"
     ],
-    github: "https://github.com/NotPostage/Adaptive-Theme"
+    github: "https://github.com/NotPostage/Adaptive-Theme",
+    featured: true,
   },
   {
     title: "Movie Order Front End",

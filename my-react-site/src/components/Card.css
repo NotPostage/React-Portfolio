@@ -2,9 +2,16 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) minmax(350px, 1fr));
+  gap: 1rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 700px){
+    .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Project card */
@@ -17,12 +24,14 @@
   padding: 1.5rem;
   box-sizing: border-box;
 
-  background: var(--base);
+  background: var(--primary);
   color: var(--text);
 
+  cursor: pointer;
+
   border: 1px solid
-    oklch(from var(--base) calc(l * var(--delta-over)) c h);
-  border-radius: 1rem;
+    oklch(from var(--primary) calc(l * var(--delta-over)) c h);
+/* border-radius: 1rem; */
 
   transition:
     transform var(--base-trans-time) ease,
@@ -30,9 +39,20 @@
     background-color var(--base-trans-time) ease;
 }
 
+.project-card.featured {
+  grid-column: span 2;
+  /* padding: 2rem; */
+}
+
+@media (max-width: 700px) {
+  .project-card.featured {
+    grid-column: span 1;
+  }
+}
+
 .project-card:hover {
   background: oklch(
-    from var(--base)
+    from var(--primary)
     calc(l * var(--delta-hover))
     c h
   );
@@ -79,11 +99,11 @@
   font-size: 0.75rem;
   font-weight: 500;
 
-  background: oklch(
-    from var(--base)
+  /* background: oklch(
+    from var(--primary)
     calc(l * var(--delta-hover))
     c h
-  );
+  ); */
   border: var(--text) solid 1px;    
   border-radius: 999px;
 }

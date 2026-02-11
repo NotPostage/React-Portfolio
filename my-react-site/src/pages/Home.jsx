@@ -14,9 +14,9 @@ function HomePage() {
         <p>
             I’m a Computer Science student at Carleton University with a 
             focus on front-end development and a growing interest in broader 
-            software engineering, including APIs, tooling, and system design!
+            software engineering and system design!
         </p>
-
+      </header>
         <div className="home-actions">
             <Link to="/projects" className="nav-button">
             View Projects
@@ -25,7 +25,6 @@ function HomePage() {
             GitHub
             </a>
         </div>
-    </header>
     </main>
   );
 }

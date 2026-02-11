@@ -1,0 +1,48 @@
+/* Root overlay layer */
+.overlay {
+  inset: 0;
+  z-index: 1000;
+}
+
+/* Backdrop */
+/* Backdrop */
+.overlay-backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: oklch(from var(--primary) l * var(--delta-over) c h);
+  backdrop-filter: blur(2px);
+}
+
+/* Content panel */
+.overlay-content {
+  /* width: 80%;
+  height: 80%;
+  max-width: 720px;
+
+  padding: 2rem;
+  box-sizing: border-box;
+
+  background: var(--primary);
+  color: var(--text);
+
+  border: 1px solid oklch(from var(--nav-bg) calc(l * var(--delta-over)) c h); */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .overlay-backdrop {
+    padding: 2vh 0.75rem;
+  }
+
+  .overlay-content {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+}
+
+/* Hide when closed */
+.hidden {
+  display: none;
+}
